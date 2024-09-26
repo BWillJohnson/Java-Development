@@ -4,7 +4,7 @@ import com.sun.security.jgss.GSSUtil;
 
 import java.sql.SQLOutput;
 
-public class MathApp {
+    public class MathApp {
     public static void main(String[] args) {
        // Q1
         double bobsalary = 15000;
@@ -37,9 +37,13 @@ public class MathApp {
         //Q6 Absolute value
         System.out.println(Math.abs(-4.7));
 
+        //Q7
+        double num4 = 1;
+        double num5 = 10;
+        System.out.println(Math.random());
+
 
         }
 
 
     }
-}
