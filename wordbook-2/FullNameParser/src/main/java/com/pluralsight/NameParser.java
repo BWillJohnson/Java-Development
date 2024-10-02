@@ -20,7 +20,7 @@ public class NameParser {
         System.out.println(firstName.trim());
         return firstName;
 
-       
+
     }
 
 
