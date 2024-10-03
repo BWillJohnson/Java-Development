@@ -36,7 +36,7 @@ public class NameParser {
     }
 
     public static void printStatement(String firstName, String middleName, String lastName) {
-        System.out.println("Hey  " + firstName + " " + middleName + " " + lastName);
+        System.out.println("Hello how are,  " + firstName + " " + middleName + " " + lastName);
     }
     // String trimmed entity = entity.trim();
 
