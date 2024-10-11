@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87c1e558-b2c9-4840-bf3a-289c39566247" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/HardwareStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/HardwareStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Neighbordhood-Library/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/inventory.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/com/pluralsight/InventoryMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/com/pluralsight/product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Workshop2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Workshop2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchInventory/src/main/java/com/pluralsight/StoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchInventory/src/main/java/com/pluralsight/StoreApplication.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2nFXM8nUhWvQ6i2lKWOHYr50oiH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87c1e558-b2c9-4840-bf3a-289c39566247" name="Changes" comment="" />
+      <created>1728569746882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728569746882</updated>
+    </task>
+    <servers />
+  </component>
+</project>
