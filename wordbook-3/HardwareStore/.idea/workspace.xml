@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87c1e558-b2c9-4840-bf3a-289c39566247" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/HardwareStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/HardwareStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Neighbordhood-Library/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/inventory.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/com/pluralsight/InventoryMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/com/pluralsight/product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Books.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Workshop2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/Workshop2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SearchInventory/src/main/java/com/pluralsight/StoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchInventory/src/main/java/com/pluralsight/StoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/animeLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Neighbordhood-Library/src/main/java/com/pluralsight/animeLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +34,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -44,23 +44,7 @@ public class animeLibrary {
             }
         }
 
-
-//            switch (option) {
-//                case 1 -> {
-//                    displayWholeBookShelf(books, input);
-//                    break;
-//                }
-//                case 2 -> {
-//                    displayBookHistory(input);
-//                }
-//                case 3 -> {
-//                    System.out.println("sayonara!");
-//                }
-//                default -> System.err.println("Invalid option, Try again with valid option");
-//            }
-//        }
     }
-
     public static void displayWholeBookShelf(Books[] book, Scanner input) {
         System.out.println("available Books!: ");
         boolean present = false;
