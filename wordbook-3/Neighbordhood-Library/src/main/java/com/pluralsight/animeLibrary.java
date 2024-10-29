@@ -8,11 +8,11 @@ public class animeLibrary {
     public static void main(String[] args) {
         // Initializing ArrayList
 
-        Book[0] = new Books(1, 978 - 1 - 23456 - 789, "Naruto Volume 1");
-        Book[1] = new Books(2, 978 - 1 - 23456 - 789 - 1, "Demon Slayer Volume 7");
-        Book[2] = new Books(3, 978 - 1 - 23456 - 789 - 2, "One Piece Volume 3");
-        Book[3] = new Books(4, 978 - 1 - 23456 - 789 - 3, "My Hero Academia Volume 10");
-        Book[4] = new Books(5, 978 - 1 - 23456 - 789 - 4, "How i killed the demon king Volume 8");
+        Book[0] = new Books(1, 978, "Naruto Volume 1");
+        Book[1] = new Books(2, 979, "Demon Slayer Volume 7");
+        Book[2] = new Books(3, 980, "One Piece Volume 3");
+        Book[3] = new Books(4, 981, "My Hero Academia Volume 10");
+        Book[4] = new Books(5, 982, "How i killed the demon king Volume 8");
 
         displayBookLog(Book);
         System.out.println("Invalid Book entry please click in between [0] - [4], Thank You!!");
@@ -23,9 +23,9 @@ public class animeLibrary {
         Scanner input = new Scanner(System.in);
         while (true) {
             System.out.println(" Hi welcome to the Anime library!");
-            System.out.println(" Books available for me:  ");
-            System.out.println(" Books that are Checked out: ");
-            System.out.println(" EXIT library");
+            System.out.println(" [1] Books available for me:  ");
+            System.out.println(" [2] Books that are Checked out: ");
+            System.out.println(" [3] EXIT library");
             System.out.println("\nEnter your response: ");
 
             int option = input.nextInt();
@@ -44,13 +44,14 @@ public class animeLibrary {
             }
         }
 
+
     }
     public static void displayWholeBookShelf(Books[] book, Scanner input) {
         System.out.println("available Books!: ");
         boolean present = false;
-        for (Books books : book) {
-            if (!books.getIsCheckedOut()) {
-                System.out.println("ID: " + books.getID() + " / " + books.getISBN() + " / " + books.getTitle());
+        for (Books manga : book) {
+            if (!book.getIsCheckedOut()) {
+                System.out.println("ID: " + book.getID() + " / " + book.getISBN() + " / " + book.getTitle());
                 present = true;
             }
         }

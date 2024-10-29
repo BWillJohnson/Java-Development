@@ -17,6 +17,7 @@ public class Room {
 
     }
 
+
     //Getters & Setters
     public int getNumberOfBeds() {
         return numberOfBeds;
@@ -34,19 +35,37 @@ public class Room {
         return isDirty;
     }
 
+    public void checkIn() {
+        if (!isOccupied && !isDirty) {
+            isOccupied = true;
+            isDirty = true;
+        }
+    }
 
-    public boolean isAvailable(){
+    public void checkout() {
+        isOccupied = false;
+    }
+    public void cleanRoom() {
+        if (!isOccupied) {
+            isDirty = false;
+        }
+    }
+
+    public boolean isAvailable() {
         return !isOccupied && !isDirty;
     }
-    public boolean isCheckedIn(){
+
+    public boolean isCheckedIn() {
         return isOccupied && isDirty;
     }
-    public boolean isCheckedOut(){
+
+    public boolean isCheckedOut() {
 
         System.out.println("HouseKeeper is not finished cleaning and sanitizing room!");
         return isDirty && !isOccupied;
     }
-    public boolean isCleanRoom(){
+
+    public boolean isCleanRoom() {
         System.out.println("HouseKeeper has finished sterilizing and freshening your room!");
         return !isOccupied && !isDirty;
     }

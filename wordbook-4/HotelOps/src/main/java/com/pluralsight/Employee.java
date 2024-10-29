@@ -5,21 +5,24 @@ import java.time.LocalDateTime;
 public class Employee {
     private int employeeId;
     private String name;
-    private  String department;
+    private String department;
     private double payRate;
     private double hoursWorked;
     private double startTime;
+    private double durationTime;
 
-
-    public Employee(int employeeId, String name, String department, double payRate, double hoursWorked) {
+    public Employee(int employeeId, String name, String department, double payRate) {
         this.employeeId = employeeId;
         this.name = name;
         this.department = department;
         this.payRate = payRate;
         this.hoursWorked = 0;
-        this.startTime= 0;
+        this.startTime = 0;
     }
 
+    public double getStartTime() {
+        return startTime;
+    }
 
     public int getEmployeeId() {
         return employeeId;
@@ -40,25 +43,36 @@ public class Employee {
     public double getHoursWorked() {
         return hoursWorked;
     }
-    public double getStartTime(){
-        return startTime;
-    }
-    public void punchIn() {
-        LocalDateTime timeNow = LocalDateTime.now();
-        int hour =timeNow.getHour();
-        int minute =timeNow.getMinute();
-        double time = hour + (minute/60);
+
+    public void punchIn(double time) {
         startTime = time;
     }
-    public void punchOut(){
-        LocalDateTime timeNow = LocalDateTime.now();
-        int hour =timeNow.getHour();
-        int minute =timeNow.getMinute();
-        double duration = hour + (minute/60);
+
+    public void punchOut(double time) {
+        double duration = time - startTime;
         hoursWorked += duration;
-        duration = 0;
+        startTime = 0;
     }
-    public void punchTimeCard(double time){
+
+    public void punchIn() {
+        LocalDateTime now = LocalDateTime.now();
+        int hour = now.getHour();
+        int minute = now.getMinute();
+        double time = hour + (minute / 60.0);
+        startTime = time;
+    }
+
+    public void punchOut() {
+        LocalDateTime now = LocalDateTime.now();
+        int hour = now.getHour();
+        int minute = now.getMinute();
+        double time = hour + (minute / 60.0);
+        double duration = time - startTime;
+        hoursWorked += duration;
+        startTime = 0;
+    }
+
+    public void punchTimeCard(double time) {
         if (startTime == 0) {
             startTime = time;
         } else {
@@ -67,6 +81,7 @@ public class Employee {
             startTime = 0;
         }
     }
+
     public double getTotalPay() {
         if (hoursWorked <= 40) {
             return hoursWorked * payRate;
@@ -75,20 +90,19 @@ public class Employee {
         }
     }
 
-
-    public double getRegularHours(){
-        if (hoursWorked <= 40){
+    public double getRegularHours() {
+        if (hoursWorked <= 40) {
             return hoursWorked;
-        }else {
+        } else {
             return 40;
         }
     }
-    public double getOverTimeHours(){
-        if (hoursWorked>40){
+
+    public double getOvertimeHours() {
+        if (hoursWorked > 40) {
             return hoursWorked - 40;
-        }else {
+        } else {
             return 0;
         }
     }
-
 }
