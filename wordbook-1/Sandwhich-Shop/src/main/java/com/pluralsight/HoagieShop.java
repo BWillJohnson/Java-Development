@@ -25,7 +25,7 @@ public class HoagieShop {
         if (hoagieSize == 1) {
             basePrice = 5.45;
         } else if (hoagieSize == 2) {
-            basePrice = 5.45;
+            basePrice = 8.95;
         } else {
             System.out.println("Error hoagie size");
             return;

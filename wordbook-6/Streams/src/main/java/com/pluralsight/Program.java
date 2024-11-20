@@ -21,24 +21,77 @@ public class Program {
 
         getPersonName(personList);
 
-        System.out.println(personList);
+
+
+        int average = getAgeAverage(personList);
+        System.out.println("Average age: " + average);
+
+        int oldestAge = findOldestAge(personList);
+        System.out.println("Oldest Age: " + oldestAge);
+
+        double averageAge = calculateAverageAge(personList);
+        System.out.println("Average age: " + averageAge);
+
+        int minAge = findYoungestAge(personList);
+        System.out.println("The youngest age: " + minAge);
     }
-    public static void getPersonName(List<Person>personList){
+
+
+    public static void getPersonName(List<Person> personList) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Hi enter the [First Name] [Last Name] of the individual you are trying to find.: ");
-        String respone = input.nextLine().trim();
+        System.out.println("Hi enter the [First Name] or [Last Name] of the individual you are trying to find.: ");
+        String response = input.nextLine().trim();
         boolean nameFound = false;
         for (Person person : personList) {
-           if (respone.equalsIgnoreCase(person.getFirstName())|| respone.equalsIgnoreCase(person.getLastName())){
-               System.out.println("Got Em: " + person.getFirstName() + person.getLastName());
-            nameFound = true;
-            break;
-           }
+            if (response.equalsIgnoreCase(person.getFirstName()) || response.equalsIgnoreCase(person.getLastName())) {
+                System.out.println("Got Em: " + person.getFirstName() + " | " + person.getLastName() + " | " + person.getAge());
+                nameFound = true;
+                break;
+            }
         }
-        if (!nameFound){
+        if (!nameFound) {
             System.err.println("Notice person is not listed.");
 
         }
 
+    }
+
+    public static int getAgeAverage(List<Person> personList) {
+        int sum = 0;
+        for (Person name : personList) {
+            sum += name.getAge();
+        }
+        return sum /personList.size();
+    }
+    public static int findOldestAge(List<Person>personList){
+        int oldestAge = 0;
+        try {
+            for (Person person : personList) {
+                if (person.getAge() > oldestAge){
+                    oldestAge = person.getAge();
+                }
+            }
+
+        } catch (Exception e) {
+            System.err.println("!Notice age is invalid in memory system");
+        }
+        return oldestAge;
+
+    }
+    public static double calculateAverageAge(List<Person>personList){
+        double sum = 0;
+        for (Person person : personList) {
+            sum += person.getAge();
+        }
+        return  sum / personList.size();
+    }
+    public static  int findYoungestAge(List<Person> personList){
+        int minAge = Integer.MAX_VALUE;
+        for (Person person : personList) {
+            if (person.getAge()< minAge)
+                minAge = person.getAge();
+
+        }
+        return minAge;
     }
 }

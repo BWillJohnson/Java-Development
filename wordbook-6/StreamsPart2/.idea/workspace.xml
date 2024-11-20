@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678cbb5f-e65a-41f0-9fb5-cfafa0b1ffb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../wordbook-6/StreamsPart2/src/main/java/com/pluralsight/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../wordbook-6/StreamsPart2/src/main/java/com/pluralsight/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wordbook-6/Streams/src/main/java/com/pluralsight/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../wordbook-6/Streams/src/main/java/com/pluralsight/Program.java" afterDir="false" />
+    <list default="true" id="363bd800-ffd7-455c-869c-4a01be33b11d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wordbook-1/Sandwhich-Shop/src/main/java/com/pluralsight/HoagieShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../wordbook-1/Sandwhich-Shop/src/main/java/com/pluralsight/HoagieShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wordbook-3/FormattedDates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wordbook-3/FormattedDates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Streams/src/main/java/com/pluralsight/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Streams/src/main/java/com/pluralsight/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2nCm4dpviCgNOo3XFW9LrYIixqk" />
+  <component name="ProjectId" id="2oTxCZVzNG3cnHSDwLurAmbYJJZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,11 +47,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="678cbb5f-e65a-41f0-9fb5-cfafa0b1ffb3" name="Changes" comment="" />
-      <created>1728485242032</created>
+      <changelist id="363bd800-ffd7-455c-869c-4a01be33b11d" name="Changes" comment="" />
+      <created>1730907239702</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728485242032</updated>
+      <updated>1730907239702</updated>
     </task>
     <servers />
   </component>

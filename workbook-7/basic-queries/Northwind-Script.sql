@@ -41,15 +41,20 @@ WHERE CategoryID = 8;
 Select FirstName,LastName
 FROM employees;
 -- Question 12:
-select *
+SELECT *
 FROM employees
-WHERE Title = MANAGER;
+WHERE Title LIKE '%manager%';
 -- Question 13:
+SELECT DISTINCT title
+FROM employees
 -- Question 14:
-SELECT * 
+SELECT *
 FROM Employees
 WHERE Salary BETWEEN 2000 AND 2500;
 -- Question 15:
+SELECT *
+FROM suppliers;
 -- Question 16:
-SELECT * 
-FROM Products
+SELECT *
+FROM northwind.products
+WHERE SupplierID = 4
