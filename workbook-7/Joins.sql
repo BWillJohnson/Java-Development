@@ -8,26 +8,35 @@ INNER JOIN categories c
 SELECT p.ProductID, p.ProductName, p.UnitPrice, s.CompanyName AS SupplierName
 FROM products p
 RIGHT JOIN suppliers s
-					ON p.ProductID = s.SupplierID
+					ON p.SupplierID = s.SupplierID
                     WHERE p.UnitPrice > 75
                     ORDER BY p.ProductName;
 -- Question 3:
 SELECT p.ProductID, p.ProductName, p.UnitPrice, c.CategoryName, s.CompanyName AS SupplierName 
 FROM products p
-				INNER JOIN categories c
+			INNER JOIN categories c
 				ON p.CategoryID = c.CategoryID
-				INNER JOIN suppliers s
+			INNER JOIN suppliers s
                 ON p.SupplierID = s.SupplierID
-                ORDER BY p.ProductName;
+                  ORDER BY p.ProductName;
 -- Question 4:
-SELECT p.ProductName, p.UnitPrice, c.Description AS Category
+SELECT p.ProductName, c.CategoryName AS Category
 FROM products p
 			INNER JOIN categories c
-            ORDER BY p.UnitPrice DESC;
+            ON p.CategoryID = c.CategoryID
+            WHERE p.UnitPrice =(SELECT MAX(UnitPrice)
+											FROM products p);
             
 -- Question 5:
-SELECT o.OrderID, o.shipName, o.ShipAddress,
-FROM Orders o;
+SELECT o.OrderID, o.shipName, o.ShipAddress,ship.CompanyName
+FROM Orders o
+INNER JOIN shippers ship ON o.ShipVia = ship.ShipperID
+WHERE o.ShipCountry LIKE 'Germany';
 
 
 -- Question 6:
+SELECT o.orderID, o.orderDate,o.shipName, o.ShipAddress
+FROM Orders o
+INNER JOIN `order details` od ON o.orderID = od.OrderID
+INNER JOIN products p ON od.ProductID = p.productID
+WHERE p.productName = 'Sasquatch Ale';
