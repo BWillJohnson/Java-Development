@@ -81,10 +81,10 @@ public class NorthwindTraders5 {
         }
     }
 
-    private static void displayProductsInCategory(Connection connection, int categoryId) {
+    private static void displayProductsInCategory(DataSource dataSource) {
         String query = "SELECT ProductID, ProductName, UnitPrice, UnitsInStock FROM Products WHERE CategoryID = ?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-            preparedStatement.setInt(1, categoryId);
+            preparedStatement.setInt(1);
             try (ResultSet productResultSet = preparedStatement.executeQuery()) {
                 System.out.println("\nProducts in the selected category:");
                 while (productResultSet.next()) {
