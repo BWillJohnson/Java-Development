@@ -1,0 +1,43 @@
+package com.pluralsight.NorthwindTradersAPI3.controllers;
+
+
+import com.pluralsight.NorthwindTradersAPI3.dao.interfaces.IProductDao;
+import com.pluralsight.NorthwindTradersAPI3.models.Product;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class ProductController {
+    private final IProductDao productDao;
+
+    @Autowired
+    public ProductController(IProductDao productDao) {
+        this.productDao = productDao;
+    }
+
+    public Product addProduct(Product product) {
+        return productDao.insert(product);
+    }
+    @RequestMapping(path = "/products", method = RequestMethod.GET)
+    public List<Product> getAllProducts() {
+        return productDao.getAll();
+    }
+    @RequestMapping(path = "/products/{productId}", method = RequestMethod.GET)
+    public Product getProductById(@PathVariable int productId) {
+        return productDao.getById(productId);
+    }
+
+    public void updateProduct(int productId, Product product) {
+        productDao.update(productId, product);
+    }
+
+    public void deleteProduct(int productId) {
+        productDao.delete(productId);
+    }
+}
