@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12b6c332-2b1e-46a8-8e9c-305238b101c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/NorthwindCommandLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/NorthwindTradersSpringBootModifiedApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/dao/impl/JdbcProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/dao/impl/SimpleProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/dao/interfaces/IProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/db/DatabaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/java/com/pluralsight/NorthwindTradersSpringBootModified/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NorthwindTradersSpringBootModified/src/test/java/com/pluralsight/NorthwindTradersSpringBootModified/NorthwindTradersSpringBootModifiedApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2q23NDslEGMC9qqdY9cGtr4oRQ1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12b6c332-2b1e-46a8-8e9c-305238b101c9" name="Changes" comment="" />
+      <created>1733846800505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733846800505</updated>
+    </task>
+    <servers />
+  </component>
+</project>
