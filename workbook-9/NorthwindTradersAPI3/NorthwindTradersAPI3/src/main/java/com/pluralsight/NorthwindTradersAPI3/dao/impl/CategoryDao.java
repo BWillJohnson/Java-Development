@@ -111,7 +111,17 @@ public class CategoryDao implements ICategory {
     }
 
     @Override
-    public void delete(int categoryId) {
+    public void deleteCategory(int categoryId) {
+        String sql = "DELETE FROM categories WHERE CategoryID= ?";
 
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setInt(1, categoryId);
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

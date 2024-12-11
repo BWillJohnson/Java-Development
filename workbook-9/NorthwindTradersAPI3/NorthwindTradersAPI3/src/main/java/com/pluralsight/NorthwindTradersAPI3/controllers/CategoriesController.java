@@ -12,29 +12,34 @@ import java.util.List;
 
 @RestController
 public class CategoriesController {
-    private final ICategory CategoryDao;
+    private final ICategory categoryDao;
     @Autowired
     public CategoriesController(ICategory jdbcCategoryDao) {
-        CategoryDao = jdbcCategoryDao;
+        categoryDao = jdbcCategoryDao;
     }
 
     @RequestMapping(path = "/categories", method = RequestMethod.GET)
     public List<Category> getAllCategory(){
-        return CategoryDao.getAllCategory();
+        return categoryDao.getAllCategory();
     }
 
     @RequestMapping(path = "/categories/{categoryId}", method = RequestMethod.GET)
     public Category getCategoriesById(@PathVariable int categoryId){
-        return CategoryDao.getCategoriesById(categoryId);
+        return categoryDao.getCategoriesById(categoryId);
     }
 
     @RequestMapping(path = "/categories", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public Category insertCategory(@RequestBody Category category) {
-        return CategoryDao.insertCategory(category);
+        return categoryDao.insertCategory(category);
     }
     @RequestMapping(path = "/categories/{categoryId}", method = RequestMethod.PUT)
     public void updateCategory(@PathVariable int categoryId,@RequestBody Category category) {
-        CategoryDao.updateCategory(categoryId,category);
+        categoryDao.updateCategory(categoryId,category);
+    }
+    @RequestMapping(path = "/categories/{categoryId}",method = RequestMethod.DELETE)
+    @ResponseStatus(value = HttpStatus.NO_CONTENT)
+    public void deleteCategory(@PathVariable int categoryId) {
+        categoryDao.deleteCategory(categoryId);
     }
 }
