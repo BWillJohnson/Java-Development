@@ -13,12 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class JdbcProductDao implements IProductDao {
+public class ProductDao implements IProductDao {
 
     private final DataSource dataSource;
 
     @Autowired
-    public JdbcProductDao(DataSource dataSource) {
+    public ProductDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 

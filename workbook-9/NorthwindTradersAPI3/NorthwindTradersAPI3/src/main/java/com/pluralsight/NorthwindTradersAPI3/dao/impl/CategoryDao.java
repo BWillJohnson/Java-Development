@@ -11,19 +11,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class JdbcCategoryDao implements ICategory {
+public class CategoryDao implements ICategory {
 
     private DataSource dataSource;
 
     @Autowired
-    public JdbcCategoryDao(DataSource dataSource) {
+    public CategoryDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
 
     @Override
     public List<Category> getAllCategory() {
-        // This method retrieves all transactions from the database.
         List<Category> categories = new ArrayList<>();
         String getAllQuery = "SELECT * FROM categories";
 
@@ -62,5 +61,45 @@ public class JdbcCategoryDao implements ICategory {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    public Category insertCategory(Category category) {
+        String sql = "INSERT INTO categories (CategoryName) VALUES (?)";
+
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement insertStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+                insertStatement.setString(1,category.getCategoryName());
+
+
+            int affectedRows = insertStatement.executeUpdate();
+
+            if (affectedRows == 0) {
+                throw new SQLException("Creating category failed, no rows affected.");
+            }
+
+            try (ResultSet generatedKeys = insertStatement.getGeneratedKeys()) {
+                if (generatedKeys.next()) {
+                    int generatedId = generatedKeys.getInt(1);
+                    category.setCategoryId(generatedId);
+                } else {
+                    throw new SQLException("Creating category failed, no ID obtained.");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return category;
+    }
+
+    @Override
+    public void update(int categoryId, Category category) {
+
+    }
+
+    @Override
+    public void delete(int categoryId) {
+
     }
 }
