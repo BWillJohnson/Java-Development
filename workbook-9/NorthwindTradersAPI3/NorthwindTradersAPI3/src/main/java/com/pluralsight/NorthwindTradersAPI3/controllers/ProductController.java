@@ -31,8 +31,8 @@ public class ProductController {
     public Product getProductById(@PathVariable int productId) {
         return productDao.getById(productId);
     }
-
-    public void updateProduct(int productId, Product product) {
+    @RequestMapping(path = "/products/{productId}", method = RequestMethod.PUT)
+    public void updateProduct(@PathVariable int productId,@RequestBody Product product) {
         productDao.update(productId, product);
     }
 

@@ -5,7 +5,7 @@ public class Product {
         private String productName;
         private int categoryId;
         private double unitPrice;
-        
+
 
         public Product(int productId, String productName, int categoryId, double unitPrice) {
             this.productId = productId;

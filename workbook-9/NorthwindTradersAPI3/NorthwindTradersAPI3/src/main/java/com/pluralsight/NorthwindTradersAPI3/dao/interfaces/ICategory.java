@@ -11,7 +11,7 @@ public interface ICategory {
 
     Category insertCategory(Category category);
 
-    void update(int categoryId, Category category);
+    void updateCategory(int categoryId, Category category);
 
     void delete(int categoryId);
 }

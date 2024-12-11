@@ -94,8 +94,20 @@ public class CategoryDao implements ICategory {
     }
 
     @Override
-    public void update(int categoryId, Category category) {
+    public void updateCategory(int categoryId, Category category) {
+        String sql = "UPDATE categories SET CategoryName = ? WHERE CategoryID = ?";
 
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement updateStatement = connection.prepareStatement(sql)) {
+
+            updateStatement.setString(1,category.getCategoryName());
+            updateStatement.setInt(2, categoryId);
+
+
+            updateStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
